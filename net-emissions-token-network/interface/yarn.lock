@@ -1710,21 +1710,13 @@
   dependencies:
     crypto-js "^4.1.1"
 
-"@grpc/grpc-js@^1.1.1", "@grpc/grpc-js@^1.3.4":
+"@grpc/grpc-js@^1.3.4", "@grpc/grpc-js@^1.4.1":
   version "1.6.7"
   resolved "https://registry.yarnpkg.com/@grpc/grpc-js/-/grpc-js-1.6.7.tgz#4c4fa998ff719fe859ac19fe977fdef097bb99aa"
   integrity sha512-eBM03pu9hd3VqDQG+kHahiG1x80RGkkqqRb1Pchcwqej/KkAH95gAvKs6laqaHCycYaPK+TKuNQnOz9UXYA8qw==
   dependencies:
     "@grpc/proto-loader" "^0.6.4"
     "@types/node" ">=12.12.47"
-
-"@grpc/proto-loader@^0.5.4":
-  version "0.5.6"
-  resolved "https://registry.yarnpkg.com/@grpc/proto-loader/-/proto-loader-0.5.6.tgz#1dea4b8a6412b05e2d58514d507137b63a52a98d"
-  integrity sha512-DT14xgw3PSzPxwS13auTEwxhMMOoz33DPUKNtmYK/QYbBSpLXJy78FGGs5yVoxVobEqPm4iW9MOIoz0A3bLTRQ==
-  dependencies:
-    lodash.camelcase "^4.3.0"
-    protobufjs "^6.8.6"
 
 "@grpc/proto-loader@^0.6.2", "@grpc/proto-loader@^0.6.4":
   version "0.6.10"
@@ -1734,6 +1726,17 @@
     "@types/long" "^4.0.1"
     lodash.camelcase "^4.3.0"
     long "^5.2.0"
+    protobufjs "^6.10.0"
+    yargs "^16.2.0"
+
+"@grpc/proto-loader@^0.6.6":
+  version "0.6.12"
+  resolved "https://registry.yarnpkg.com/@grpc/proto-loader/-/proto-loader-0.6.12.tgz#459b619b8b9b67794bf0d1cb819653a38c63e164"
+  integrity sha512-filTVbETFnxb9CyRX98zN18ilChTuf/C5scZ2xyaOTp0EHGq0/ufX8rjqXUcSb1Gpv7eZq4M2jDvbh9BogKnrg==
+  dependencies:
+    "@types/long" "^4.0.1"
+    lodash.camelcase "^4.3.0"
+    long "^4.0.0"
     protobufjs "^6.10.0"
     yargs "^16.2.0"
 
@@ -3168,10 +3171,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.50.tgz#14ba5198f1754ffd0472a2f84ab433b45ee0b65e"
   integrity sha512-+9axpWx2b2JCVovr7Ilgt96uc6C1zBKOQMpGtRbWT9IoR/8ue32GGMfGA4woP8QyP2gBs6GQWEVM3tCybGCxDA==
 
-"@types/node@^14.0.13":
-  version "14.18.16"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.18.16.tgz#878f670ba3f00482bf859b6550b6010610fc54b5"
-  integrity sha512-X3bUMdK/VmvrWdoTkz+VCn6nwKwrKCFTHtqwBIaQJNx4RUIBBUFXM00bqPz/DsDd+Icjmzm6/tyYZzeGVqb6/Q==
+"@types/node@^16.11.1":
+  version "16.11.35"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.35.tgz#6642bdce5b5cee23314b91a7c069981c6bd68791"
+  integrity sha512-QXu45LyepgnhUfnIAj/FyT4uM87ug5KpIrgXfQtUPNAlx8w5hmd8z8emqCLNvG11QkpRSCG9Qg2buMxvqfjfsQ==
 
 "@types/node@^17.0.32":
   version "17.0.32"
@@ -4083,7 +4086,7 @@ anymatch@^3.0.3, anymatch@~3.1.2:
   version "1.0.0"
   dependencies:
     "@trpc/server" "^9.23.2"
-    blockchain-accounting-data-postgres "file:../../../../Library/Caches/Yarn/v6/npm-api-server-1.0.0-c413b8b3-77a1-4e5f-949b-ab1985324137-1652336931523/data/postgres"
+    blockchain-accounting-data-postgres "file:../../../../Library/Caches/Yarn/v6/npm-api-server-1.0.0-2a6cbdbc-afcd-4600-a54f-e1c89e4b54cc-1652445477025/data/postgres"
     chalk "^5.0.1"
     cors "^2.8.5"
     dotenv "^16.0.0"
@@ -4092,10 +4095,11 @@ anymatch@^3.0.3, anymatch@~3.1.2:
     express-fileupload "^1.3.1"
     express-request-context "^1.0.1"
     moment "^2.29.3"
+    nodemailer "^6.7.5"
     pg "^8.7.3"
-    supply-chain-lib "file:../../../../Library/Caches/Yarn/v6/npm-api-server-1.0.0-c413b8b3-77a1-4e5f-949b-ab1985324137-1652336931523/supply-chain/lib"
+    supply-chain-lib "file:../../../../Library/Caches/Yarn/v6/npm-api-server-1.0.0-2a6cbdbc-afcd-4600-a54f-e1c89e4b54cc-1652445477025/supply-chain/lib"
     web3 "^1.7.3"
-    zod "^3.14.4"
+    zod "^3.16.0"
 
 app-root-path@^3.0.0:
   version "3.0.0"
@@ -4697,9 +4701,9 @@ blob-to-it@^1.0.1:
 "blockchain-accounting-data-postgres@file:../../data/postgres", "blockchain-carbon-accounting-data-postgres@file:../../data/postgres":
   version "1.0.0"
   dependencies:
-    blockchain-carbon-accounting-data-common "file:../../../../Library/Caches/Yarn/v6/npm-blockchain-accounting-data-postgres-1.0.0-79bcab51-203f-4394-911c-5316195af22c-1652336931608/node_modules/common"
+    blockchain-carbon-accounting-data-common "file:../../../../Library/Caches/Yarn/v6/npm-blockchain-accounting-data-postgres-1.0.0-1cc513c1-59c0-4343-9ab2-d96536fb839a-1652445477135/node_modules/common"
     cli-progress "^3.10.0"
-    emissions_data_chaincode "file:../../../../Library/Caches/Yarn/v6/npm-blockchain-accounting-data-postgres-1.0.0-79bcab51-203f-4394-911c-5316195af22c-1652336931608/emissions-data/chaincode/emissionscontract/typescript"
+    emissions_data_chaincode "file:../../../../Library/Caches/Yarn/v6/npm-blockchain-accounting-data-postgres-1.0.0-1cc513c1-59c0-4343-9ab2-d96536fb839a-1652445477135/emissions-data/chaincode/emissionscontract/typescript"
     pg "^8.7.3"
     reflect-metadata "^0.1.13"
     ts-node "^10.7.0"
@@ -4712,7 +4716,7 @@ blob-to-it@^1.0.1:
   version "1.0.0"
   dependencies:
     cli-progress "^3.11.0"
-    emissions_data_chaincode "file:../../../../Library/Caches/Yarn/v6/npm-blockchain-carbon-accounting-data-common-1.0.0-bd27fb6a-0f97-46c9-ae6d-5bf46b8949fd-1652336931679/emissions-data/chaincode/emissionscontract/typescript"
+    emissions_data_chaincode "file:../../../../Library/Caches/Yarn/v6/npm-blockchain-carbon-accounting-data-common-1.0.0-e20e8c1d-09b8-4f90-87f4-7cc2227060ef-1652445477147/emissions-data/chaincode/emissionscontract/typescript"
     uuid "^8.3.2"
     xlsx "^0.18.5"
 
@@ -5344,10 +5348,10 @@ class-is@^1.1.0:
   resolved "https://registry.yarnpkg.com/class-is/-/class-is-1.1.0.tgz#9d3c0fba0440d211d843cec3dedfa48055005825"
   integrity sha512-rhjH9AG1fvabIDoGRVH587413LPjTZgmDF9fOFCbFJQV4yuocX1mHxxvXI4g3cGwbVY9wAYIoKlg1N79frJKQw==
 
-class-transformer@^0.3.1:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/class-transformer/-/class-transformer-0.3.2.tgz#779ef5f124784324b40f8e927c774bd96cdecd4b"
-  integrity sha512-9QY6QXBH/+Gt1C3HBmJCrgY6+EFpIa6aLjfDnlXFx0zQl/HjrCE7qoaI0srNrxpMIfsobCpgUdDG5JYtJOpVsw==
+class-transformer@^0.4.0:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/class-transformer/-/class-transformer-0.4.1.tgz#eb86449fb5dc8333acbf880c96214acfa0d8dedf"
+  integrity sha512-mbBtth1BFa+pN2fmx6/NmMNxxyu9Mw9rx3rzKWBH7yoG+bfSoJOnEJ3qmB6yEKvoO502zUxSV2AqN7EUypC2Tg==
 
 classnames@^2.3.1:
   version "2.3.1"
@@ -5419,15 +5423,6 @@ cliui@^5.0.0:
     string-width "^3.1.0"
     strip-ansi "^5.2.0"
     wrap-ansi "^5.1.0"
-
-cliui@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/cliui/-/cliui-6.0.0.tgz#511d702c0c4e41ca156d7d0e96021f23e13225b1"
-  integrity sha512-t6wbgtoCXvAzst7QgXxJYqPt0usEfbgQdftEPbLL/cvv6HPE5VgvqCuAIDR0NgU52ds6rFwqrgakNLrHEjCbrQ==
-  dependencies:
-    string-width "^4.2.0"
-    strip-ansi "^6.0.0"
-    wrap-ansi "^6.2.0"
 
 cliui@^7.0.2:
   version "7.0.4"
@@ -6751,7 +6746,7 @@ elliptic@6.5.4, elliptic@^6.4.0, elliptic@^6.4.1, elliptic@^6.5.2, elliptic@^6.5
   version "0.0.1"
   dependencies:
     crypto-js "^4.1.1"
-    fabric-shim "2.2.3"
+    fabric-shim "2.4.2"
 
 emittery@^0.10.2:
   version "0.10.2"
@@ -7872,17 +7867,17 @@ fabric-common@2.3.0-snapshot.63:
   optionalDependencies:
     pkcs11js "^1.0.6"
 
-fabric-contract-api@2.2.3:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/fabric-contract-api/-/fabric-contract-api-2.2.3.tgz#7fcf8121b9722e6e9db457bf2c35f31afff1d019"
-  integrity sha512-LMwLnnqMXS+XQvnCSu0MQ2OSfvDlWYV2jscr5eT6UpVIXtNZLwSoX/2fGRUe7HJyIeH83KtTsg0AKTcDiwCtGg==
+fabric-contract-api@2.4.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/fabric-contract-api/-/fabric-contract-api-2.4.2.tgz#c047b37676ce74d5081e2868e22c8d1098374aab"
+  integrity sha512-19lInYwkx9gDXL7BTyk0lfNxO4w4WyqFTIxCiQRTpEQVoolLBDyvtuDpBHDOX4dHMA5YltzGgcxRsBhBAaLTiA==
   dependencies:
-    class-transformer "^0.3.1"
-    fabric-shim-api "2.2.3"
-    fast-safe-stringify "^2.0.7"
+    class-transformer "^0.4.0"
+    fabric-shim-api "2.4.2"
+    fast-safe-stringify "^2.1.1"
     get-params "^0.1.2"
     reflect-metadata "^0.1.13"
-    winston "^3.3.2"
+    winston "^3.7.2"
 
 fabric-network@2.3.0-snapshot.62:
   version "2.3.0-snapshot.62"
@@ -7903,28 +7898,28 @@ fabric-protos@2.3.0-snapshot.63:
     "@grpc/proto-loader" "^0.6.2"
     protobufjs "^6.11.2"
 
-fabric-shim-api@2.2.3:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/fabric-shim-api/-/fabric-shim-api-2.2.3.tgz#dc27b69b0d8de4666f7abd664a9f6b1ae2f3f661"
-  integrity sha512-wpgj/lrB9Ux06+jBRj2xnXFa7lz6iI5J8r1amhbxMnVw4HvkF2HaiNTRfnisJm+IIf3ocoNoiLS5i6nRHUKFYw==
+fabric-shim-api@2.4.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/fabric-shim-api/-/fabric-shim-api-2.4.2.tgz#fc8f3d0e36d672d7c61b9305f6793866ae07d9cf"
+  integrity sha512-ODjKxDsf6KvN3AhHhztbVSr94MjtTr+Mz/S1SinAbxVPX1yAEJ/ONEoezyu7rLslcr5zJxF1ei2z4Bp08nB2zw==
 
-fabric-shim@2.2.3:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/fabric-shim/-/fabric-shim-2.2.3.tgz#f77fc20518fd4f06edfb7253a75ba3818cb6a255"
-  integrity sha512-lSCgnKMd/68VPh2aWqF82Xg8ObOXjyayMTPS7IqrIwtyRA7yOSTdiVDe5dTqZT7/pHGoOItMlsAusdjVFNxZUQ==
+fabric-shim@2.4.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/fabric-shim/-/fabric-shim-2.4.2.tgz#ef6fc6046b23243c0e38b80b14e2938b2ac3e71f"
+  integrity sha512-NAl+YMeHVwUiFKgVF8ViKA2o5ZEz89fBZmuedcUE1T13nP31XZ5mFYauyhwu83VyLhh+5LdypkibSZ+aMilQ5g==
   dependencies:
     "@fidm/x509" "^1.2.1"
-    "@grpc/grpc-js" "^1.1.1"
-    "@grpc/proto-loader" "^0.5.4"
-    "@types/node" "^14.0.13"
+    "@grpc/grpc-js" "^1.4.1"
+    "@grpc/proto-loader" "^0.6.6"
+    "@types/node" "^16.11.1"
     ajv "^6.12.2"
-    fabric-contract-api "2.2.3"
-    fabric-shim-api "2.2.3"
-    fs-extra "^9.0.1"
+    fabric-contract-api "2.4.2"
+    fabric-shim-api "2.4.2"
+    fs-extra "^10.0.1"
     reflect-metadata "^0.1.13"
-    winston "^3.3.2"
-    yargs "^15.3.1"
-    yargs-parser "^18.1.3"
+    winston "^3.7.2"
+    yargs "^17.4.0"
+    yargs-parser "^21.0.1"
 
 fake-merkle-patricia-tree@^1.0.1:
   version "1.0.1"
@@ -7964,7 +7959,7 @@ fast-levenshtein@^2.0.6, fast-levenshtein@~2.0.6:
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
 
-fast-safe-stringify@^2.0.6, fast-safe-stringify@^2.0.7:
+fast-safe-stringify@^2.0.6, fast-safe-stringify@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/fast-safe-stringify/-/fast-safe-stringify-2.1.1.tgz#c406a83b6e70d9e35ce3b30a81141df30aeba884"
   integrity sha512-W+KJc2dmILlPplD/H4K9l9LcAHAfPtP6BY84uVLXQ6Evcz9Lcg33Y2z1IVblT6xdY54PXYVHEv+0Wpq8Io6zkA==
@@ -8235,7 +8230,7 @@ fs-constants@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs-constants/-/fs-constants-1.0.0.tgz#6be0de9be998ce16af8afc24497b9ee9b7ccd9ad"
   integrity sha512-y6OAwoSIf7FyjMIv94u+b5rdheZEjzR63GTyZJm5qh4Bi+2YgwLCcI/fPFZkL5PSixOt6ZNKm+w+Hfp/Bciwow==
 
-fs-extra@^10.0.0:
+fs-extra@^10.0.0, fs-extra@^10.0.1:
   version "10.1.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-10.1.0.tgz#02873cfbc4084dde127eaa5f9905eef2325d1abf"
   integrity sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==
@@ -11622,6 +11617,11 @@ node.extend@^1.1.5:
     has "^1.0.3"
     is "^3.2.1"
 
+nodemailer@^6.7.5:
+  version "6.7.5"
+  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-6.7.5.tgz#b30b1566f5fa2249f7bd49ced4c58bec6b25915e"
+  integrity sha512-6VtMpwhsrixq1HDYSBBHvW0GwiWawE75dS3oal48VqRhUvKJNnKnJo2RI/bCVQubj1vgrgscMNW4DHaD6xtMCg==
+
 nopt@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/nopt/-/nopt-5.0.0.tgz#530942bb58a512fccafe53fe210f13a25355dc88"
@@ -13235,7 +13235,7 @@ protobufjs@5.0.3, protobufjs@^5.0.3:
     glob "^7.0.5"
     yargs "^3.10.0"
 
-protobufjs@^6.10.0, protobufjs@^6.10.2, protobufjs@^6.11.2, protobufjs@^6.8.6:
+protobufjs@^6.10.0, protobufjs@^6.10.2, protobufjs@^6.11.2:
   version "6.11.2"
   resolved "https://registry.yarnpkg.com/protobufjs/-/protobufjs-6.11.2.tgz#de39fabd4ed32beaa08e9bb1e30d08544c1edf8b"
   integrity sha512-4BQJoPooKJl2G9j3XftkIXjoC9C0Av2NOrWmbLWT1vH32GcSUHjM0Arra6UfTsVyfMAuFzaLucXn1sadxJydAw==
@@ -15157,9 +15157,9 @@ stylis@4.0.13:
     "@metamask/eth-sig-util" "^4.0.1"
     axios "^0.27.2"
     bignumber.js "^9.0.2"
-    blockchain-carbon-accounting-data-postgres "file:../../../../Library/Caches/Yarn/v6/npm-supply-chain-lib-1.0.0-1f3fab7e-af25-4aeb-a672-3d144c3b25c0-1652336931565/data/postgres"
-    emissions_data "file:../../../../Library/Caches/Yarn/v6/npm-supply-chain-lib-1.0.0-1f3fab7e-af25-4aeb-a672-3d144c3b25c0-1652336931565/emissions-data/typescript_app"
-    emissions_data_chaincode "file:../../../../Library/Caches/Yarn/v6/npm-supply-chain-lib-1.0.0-1f3fab7e-af25-4aeb-a672-3d144c3b25c0-1652336931565/emissions-data/chaincode/emissionscontract/typescript"
+    blockchain-carbon-accounting-data-postgres "file:../../../../Library/Caches/Yarn/v6/npm-supply-chain-lib-1.0.0-e569ec39-7d19-43a4-b03a-8e670ab5e17f-1652445477102/data/postgres"
+    emissions_data "file:../../../../Library/Caches/Yarn/v6/npm-supply-chain-lib-1.0.0-e569ec39-7d19-43a4-b03a-8e670ab5e17f-1652445477102/emissions-data/typescript_app"
+    emissions_data_chaincode "file:../../../../Library/Caches/Yarn/v6/npm-supply-chain-lib-1.0.0-e569ec39-7d19-43a4-b03a-8e670ab5e17f-1652445477102/emissions-data/chaincode/emissionscontract/typescript"
     i "^0.3.7"
     ipfs-http-client "^56.0.3"
     npm "^8.9.0"
@@ -16933,7 +16933,7 @@ winston@^2.4.0, winston@^2.4.5:
     isstream "0.1.x"
     stack-trace "0.0.x"
 
-winston@^3.3.2:
+winston@^3.7.2:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/winston/-/winston-3.7.2.tgz#95b4eeddbec902b3db1424932ac634f887c400b1"
   integrity sha512-QziIqtojHBoyzUOdQvQiar1DH0Xp9nF1A1y7NVy2DGEsz82SBDtOalS0ulTRGVT14xPX3WRWkCsdcJKqNflKng==
@@ -17154,15 +17154,6 @@ wrap-ansi@^5.1.0:
     ansi-styles "^3.2.0"
     string-width "^3.0.0"
     strip-ansi "^5.0.0"
-
-wrap-ansi@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-6.2.0.tgz#e9393ba07102e6c91a3b221478f0257cd2856e53"
-  integrity sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==
-  dependencies:
-    ansi-styles "^4.0.0"
-    string-width "^4.1.0"
-    strip-ansi "^6.0.0"
 
 wrap-ansi@^7.0.0:
   version "7.0.0"
@@ -17407,20 +17398,12 @@ yargs-parser@^13.1.2:
     camelcase "^5.0.0"
     decamelize "^1.2.0"
 
-yargs-parser@^18.1.2, yargs-parser@^18.1.3:
-  version "18.1.3"
-  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-18.1.3.tgz#be68c4975c6b2abf469236b0c870362fab09a7b0"
-  integrity sha512-o50j0JeToy/4K6OZcaQmW6lyXXKhq7csREXcDwk2omFPJEwUNOVtJKvmDr9EI1fAJZUyZcRF7kxGBWmRXudrCQ==
-  dependencies:
-    camelcase "^5.0.0"
-    decamelize "^1.2.0"
-
 yargs-parser@^20.2.2:
   version "20.2.9"
   resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-20.2.9.tgz#2eb7dc3b0289718fc295f362753845c41a0c94ee"
   integrity sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==
 
-yargs-parser@^21.0.0:
+yargs-parser@^21.0.0, yargs-parser@^21.0.1:
   version "21.0.1"
   resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-21.0.1.tgz#0267f286c877a4f0f728fceb6f8a3e4cb95c6e35"
   integrity sha512-9BK1jFpLzJROCI5TzwZL/TU4gqjK5xiHV/RfWLOahrjAko/e4DJkRDZQXfvqAsiZzzYhgAzbgz6lg48jcm4GLg==
@@ -17440,23 +17423,6 @@ yargs@^13.2.4:
     which-module "^2.0.0"
     y18n "^4.0.0"
     yargs-parser "^13.1.2"
-
-yargs@^15.3.1:
-  version "15.4.1"
-  resolved "https://registry.yarnpkg.com/yargs/-/yargs-15.4.1.tgz#0d87a16de01aee9d8bec2bfbf74f67851730f4f8"
-  integrity sha512-aePbxDmcYW++PaqBsJ+HYUFwCdv4LVvdnhBy78E57PIor8/OVvhMrADFFEDh8DHDFRv/O9i3lPhsENjO7QX0+A==
-  dependencies:
-    cliui "^6.0.0"
-    decamelize "^1.2.0"
-    find-up "^4.1.0"
-    get-caller-file "^2.0.1"
-    require-directory "^2.1.1"
-    require-main-filename "^2.0.0"
-    set-blocking "^2.0.0"
-    string-width "^4.2.0"
-    which-module "^2.0.0"
-    y18n "^4.0.0"
-    yargs-parser "^18.1.2"
 
 yargs@^16.0.0, yargs@^16.1.1, yargs@^16.2.0:
   version "16.2.0"
@@ -17484,7 +17450,7 @@ yargs@^17.3.1:
     y18n "^5.0.5"
     yargs-parser "^21.0.0"
 
-yargs@^17.5.0:
+yargs@^17.4.0, yargs@^17.5.0:
   version "17.5.0"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-17.5.0.tgz#2706c5431f8c119002a2b106fc9f58b9bb9097a3"
   integrity sha512-3sLxVhbAB5OC8qvVRebCLWuouhwh/rswsiDYx3WGxajUk/l4G20SKfrKKFeNIHboUFt2JFgv2yfn+5cgOr/t5A==
@@ -17533,7 +17499,7 @@ yocto-queue@^0.1.0:
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 
-zod@^3.14.4:
-  version "3.14.4"
-  resolved "https://registry.yarnpkg.com/zod/-/zod-3.14.4.tgz#e678fe9e5469f4663165a5c35c8f3dc66334a5d6"
-  integrity sha512-U9BFLb2GO34Sfo9IUYp0w3wJLlmcyGoMd75qU9yf+DrdGA4kEx6e+l9KOkAlyUO0PSQzZCa3TR4qVlcmwqSDuw==
+zod@^3.16.0:
+  version "3.16.0"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.16.0.tgz#edfdbf77fcc9a5af13a2630a44bdda5b90e759b7"
+  integrity sha512-szrIkryADbTM+xBt2a1KoS2CJQXec4f9xG78bj5MJeEH/XqmmHpnO+fG3IE115AKBJak+2HrbxLZkc9mhdbDKA==
