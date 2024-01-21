@@ -31,7 +31,7 @@
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "express-validator": "^6.14.1",
-    "jsrsasign": "10.5.20",
+    "jsrsasign": "11.0.0",
     "ws": "^8.6.0",
     "ws-wallet": "^1.1.5"
   },
