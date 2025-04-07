@@ -25,7 +25,7 @@
   "dependencies": {
     "@types/debug": "^4.1.7",
     "debug": "3.2.7",
-    "dockerode": "^3.3.1",
+    "dockerode": "^4.0.5",
     "request-promise-native": "1.0.9",
     "tv4": "^1.2.7"
   },
